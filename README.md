@@ -1,5 +1,5 @@
-[![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
-  [![Build Status](https://travis-ci.org/cloudfoundry/membrane.png)](https://travis-ci.org/cloudfoundry/membrane)
+[![Code Climate](https://codeclimate.com/github/seacamjen/questions-answers-em/badges/gpa.svg)](https://codeclimate.com/github/seacamjen/questions-answers-em)
+
 
 # Question-Answers
 
