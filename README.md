@@ -1,3 +1,27 @@
+##Planning
+
+1. Configuration/dependencies
+  * Two models: Questions, Answers
+  * They will be defined in app/models
+  * Questions will include three attributes question, author, notes
+  * Answers will include two attributes author and content
+
+2. Specs
+  * Spec 1: CRUD Questions, Create, Update, Delete
+  * Spec 2: CRD Answers: Create, Delete
+
+3. Integration
+  * Index page with all Questions
+  * About page static with info about the site
+  * Questions details page with comments
+
+4. UX/UI
+  * Include and modify bootstrap
+
+5. Polish
+  * Refactor unused code
+  * Make README awesome
+
 # question-answers
 
 This README outlines the details of collaborating on this Ember application.
