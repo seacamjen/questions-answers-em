@@ -1,31 +1,41 @@
-##Planning
+[![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
+  [![Build Status](https://travis-ci.org/cloudfoundry/membrane.png)](https://travis-ci.org/cloudfoundry/membrane)
 
-1. Configuration/dependencies
+# Question-Answers
+
+Do you search all over the internet for what seems to be the same questions everyone at school are asking? This site will give you the opportunity to submit your questions and have them saved for future students. Sometimes the questions we have a only applicable to our class or tract that is why a personalized site just for this school is needed. What makes this different? A week long study of Ember was used to make this site possible.
+
+## Configuration/dependencies
   * Two models: Questions, Answers
   * They will be defined in app/models
   * Questions will include three attributes question, author, notes
   * Answers will include two attributes author and content
+  * Firebase used to store data
 
-2. Specs
-  * Spec 1: CRUD Questions, Create, Update, Delete
-  * Spec 2: CRD Answers: Create, Delete
+## Specs
+  1. Behavior: Create Question
+    * Input: "What is this?"
+    * Output: "What is this?" saved to firebase
+  2. Behavior: Update Question
+    * Input: "Where is this?"
+    * Output: "Where is this?" saved to firebase
+  3. Behavior: Delete Question
+    * Input: Delete "Where is this?"
+    * Output: "Where is this?" removed from firebase
+  4. Behavior: Create Answer
+    * Input: 'In the house'
+    * Output: 'In the house' saved to firebase
+  5. Behavior: Delete Answer
+    * Input: Delete 'In the house'
+    * Output: 'In the house' removed from firebase
+  6. Behavior: Associate Answer with Question
+    * Input: Question - "Where is this?" Answer - 'In the house'
+    * Output: 'In the house' saved as child of "Where is this?" in firebase
 
-3. Integration
+## Integration
   * Index page with all Questions
   * About page static with info about the site
   * Questions details page with comments
-
-4. UX/UI
-  * Include and modify bootstrap
-
-5. Polish
-  * Refactor unused code
-  * Make README awesome
-
-# question-answers
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
 
 ## Prerequisites
 
@@ -39,7 +49,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/seacamjen/questions-answers-em> this repository`
 * `cd question-answers`
 * `npm install`
 * `bower install`
@@ -48,10 +58,6 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -65,7 +71,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+follow the install and running instructions above to be able to run this app in your web browser.
 
 ## Further Reading / Useful Links
 

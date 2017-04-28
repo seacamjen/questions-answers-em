@@ -6,7 +6,7 @@
   background-image: url('/assets/images/questionbanner.jpg');
 }
 
-.jumbotron h1 {
+.jumbotron {
   color: darkred;
   font-family: monospace;
   font-weight: bold;
