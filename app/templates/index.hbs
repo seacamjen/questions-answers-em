@@ -3,9 +3,19 @@
 <p>this is the home page</p>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+<h2>All Answers</h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+{{new-answer saveAnswer="saveAnswer"}}
