@@ -15,3 +15,10 @@
 .nav-tabs img {
   padding: 3px;
 }
+
+.topbar {
+  padding: 5px;
+  border: solid gray;
+  box-shadow: 2px 2px 4px gray;
+  margin-bottom: 10px;
+}

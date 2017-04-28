@@ -3,28 +3,27 @@
       <div class="jumbotron">
         <h1 class="center logo">Epic. Student Answers</h1>
       </div>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <ul class="nav nav-tabs">
-              <li> {{#link-to 'index'}}
-                <img src="/assets/images/logo.jpg" alt="site logo">
-              {{/link-to}}
-              </li>
-              <li>{{#link-to 'about'}}<strong>About us</strong>{{/link-to}}</li>
-              <li>
-                <img class="icon" src="/assets/images/facebookicon.gif" alt="facebook icon">
-              </li>
-              <li>
-                <img class="icon" src="/assets/images/twittericon.gif" alt="twitter icon">
-              </li>
-              <li>
-                <img class="icon" src="/assets/images/googleicon.png" alt="google icon">
-              </li>
-            </ul>
-          </div>
+      <div class="row topbar">
+        <div class="col-md-1">
+          {{#link-to 'index'}}
+            <img src="/assets/images/logo.jpg" alt="site logo">
+          {{/link-to}}
         </div>
-      </nav>
+        <div class="col-md-1">
+          {{#link-to 'about'}}
+            <img src="/assets/images/aboutus.jpg" alt="about us icon">
+          {{/link-to}}
+        </div>
+        <div class="col-md-1 col-md-offset-7">
+          <img src="/assets/images/facebookicon.gif" alt="facebook icon">
+        </div>
+        <div class="col-md-1">
+          <img src="/assets/images/twittericon.gif" alt="twitter icon">
+        </div>
+        <div class="col-md-1">
+          <img src="/assets/images/googleicon.png" alt="google icon">
+        </div>
+      </div>
     </header>
   {{outlet}}
   <hr>
