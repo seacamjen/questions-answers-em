@@ -1,14 +1,14 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
-  <div>
+  <div class="center">
+    <h3>New Answer</h3>
     <form>
       <div class="form-group">
-        <label for="author">Name</label>
+        <label for="author">Name:</label><br>
         {{input value=author id="author"}}
       </div>
 
       <div class="form-group">
-        <label for="content">Answer:</label>
+        <label for="content">Answer:</label><br>
         {{textarea value=content id="content"}}
       </div>
       <button type="btn btn-default" {{action 'saveAnswer'}}>Save</button>

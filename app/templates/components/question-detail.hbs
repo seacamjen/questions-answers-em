@@ -1,14 +1,21 @@
-{{question.question}}
-<p>by: {{question.author}}</p>
-<p>addition notes: {{question.notes}}</p>
-<br>
+<button type="btn btn-default" {{action 'delete' question}}>Delete Question</button>
 
-<h2>All Answers</h2>
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <strong>Addition Notes: </strong>
+  </div>
+  <div class="panel-body">
+    {{question.notes}}
+  </div>
+</div>
+<hr>
 
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destoryAnswer="destoryAnswer"}}
-  {{/each}}
-</ul>
+<h3>Answers / Suggestions:</h3>
 
-<button type="btn btn-default" {{action 'delete' question}}>Delete</button>
+<div class="container">
+  <div class="row">
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer destoryAnswer="destoryAnswer"}}
+    {{/each}}
+  </div>
+</div>

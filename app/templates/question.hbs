@@ -1,6 +1,8 @@
-<h2>More Details about {{model.author}}'s question: {{model.question}}</h2>
+<h2 class="center">Question by {{model.author}}: <br>{{model.question}}</h2>
 
-{{update-question question=model updateQuestion="updateQuestion"}}
+<div class="pull-right">
+  {{update-question question=model updateQuestion="updateQuestion"}}
+</div>
 
 {{question-detail question=model destoryQuestion="destoryQuestion" destoryAnswer="destoryAnswer"}}
 
