@@ -1,5 +1,7 @@
-<li>
-  {{#link-to 'question' question.id}}{{question.author}}'s {{question.question}} - {{question.notes}}{{/link-to}}
-  <!-- {{update-question question=question updateQuestion="updateQuestion"}} -->
-  <!-- <button type="btn btn-default" {{action 'delete' question}}>Delete Question</button> -->
-</li>
+<div class="panel panel-warning">
+  {{#link-to 'question' question.id}}
+    <div class="panel-body">
+      {{question.question}} - {{question.author}}
+    </div>
+  {{/link-to}}
+</div>

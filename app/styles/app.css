@@ -1,0 +1,18 @@
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url('/assets/images/questionbanner.jpg');
+}
+
+.jumbotron h1 {
+  color: darkred;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.nav-tabs img {
+  padding: 3px;
+
+}

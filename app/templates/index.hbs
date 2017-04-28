@@ -1,11 +1,22 @@
-<h1>Welcome to Q&A</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="center">Welcome to Epic. Student Answers</h1>
 
-<p>this is the home page</p>
-
-<ul>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-</ul>
+      <p class="center">Feel free to ask any questions you might have while here at Epic. All quetions will be listed on the homepage and you can find the answers by clicking on the qustion. Enjoy and Keep learning!</p>
+    </div>
+  </div>
+</div>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+<h3>Questions: </h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+      {{#each model.questions as |question|}}
+        {{question-tile question=question}}
+      {{/each}}
+    </div>
+  </div>
+</div>
