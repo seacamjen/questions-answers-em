@@ -2,4 +2,13 @@
 <p>by: {{question.author}}</p>
 <p>addition notes: {{question.notes}}</p>
 <br>
+
+<h2>All Answers</h2>
+
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 <button type="btn btn-default" {{action 'delete' question}}>Delete</button>
