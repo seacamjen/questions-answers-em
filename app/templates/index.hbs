@@ -1,0 +1,11 @@
+<h1>Welcome to Q&A</h1>
+
+<p>this is the home page</p>
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.question}} - {{question.author}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
